@@ -48,42 +48,65 @@ function App() {
 
       .map((data, index) => (
         <li key={index} className="character__item">
-          <p>{data.quote}</p>
-          <p>{data.character}</p>
+          <p className="text">{data.quote}</p>
+          <p className="text-name">{data.character}</p>
         </li>
       ));
   };
   return (
-    <div>
-      <header>
-        <h1>Frases de Friends</h1>
-        <label htmlFor="">Filtrar por frase</label>
-        <input type="text" onChange={handleChangeFilter} />
-        <label htmlFor="">Filtrar por personaje</label>
-        <select name="" id="select" onChange={handleChangeSelect}>
-          <option value="todos">Todos</option>
-          <option value="ross">Ross</option>
-          <option value="monica">Monica</option>
-          <option value="joey">Joey</option>
-          <option value="phoebe">Phoebe</option>
-          <option value="chandler">Chandler</option>
-          <option value="rachel">Rachel</option>
-        </select>
+    <div className="body">
+      <header className="header">
+        <div className="header-container">
+          <h1 className="title">Frases de Friends</h1>
+          <label className="label" htmlFor="">
+            Filtrar por frase
+          </label>
+          <input className="input" type="text" onChange={handleChangeFilter} />
+          <label className="label" htmlFor="">
+            Filtrar por personaje
+          </label>
+          <select name="" id="select" onChange={handleChangeSelect}>
+            <option value="todos">Todos</option>
+            <option value="ross">Ross</option>
+            <option value="monica">Monica</option>
+            <option value="joey">Joey</option>
+            <option value="phoebe">Phoebe</option>
+            <option value="chandler">Chandler</option>
+            <option value="rachel">Rachel</option>
+          </select>
+        </div>
       </header>
-      <main>
+      <main className="main">
         <ul>{renderList()}</ul>
-        <form action="" onChange={handleFormChange}>
-          <h2>Añadir una nueva frase:</h2>
-          <label htmlFor="">frase</label>
-          <input id="quote" type="text" value={inputForm.quote} />
-          <label htmlFor="">Personaje</label>
-          <input id="character" type="text" value={inputForm.character} />
-          <input
-            onClick={handleClickButton}
-            type="button"
-            value="Añadir una nueva frase"
-          />
-        </form>
+        <footer className="footer">
+          <form action="" onChange={handleFormChange}>
+            <h2>Añadir una nueva frase:</h2>
+            <label className="label" htmlFor="">
+              frase
+            </label>
+            <input
+              className="input"
+              id="quote"
+              type="text"
+              value={inputForm.quote}
+            />
+            <label className="label" htmlFor="">
+              Personaje
+            </label>
+            <input
+              className="input"
+              id="character"
+              type="text"
+              value={inputForm.character}
+            />
+            <input
+              className="input"
+              onClick={handleClickButton}
+              type="button"
+              value="Añadir una nueva frase"
+            />
+          </form>
+        </footer>
       </main>
     </div>
   );
