@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/modulo-3-evaluacion-intermedia-sararunda/static/css/main.31d6cfe0.css",
+    "main.js": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.85a0eb13.js",
+    "index.html": "/modulo-3-evaluacion-intermedia-sararunda/index.html",
+    "main.85a0eb13.js.map": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.85a0eb13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.85a0eb13.js"
+  ]
+}
