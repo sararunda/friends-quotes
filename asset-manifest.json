@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/modulo-3-evaluacion-intermedia-sararunda/static/css/main.31d6cfe0.css",
-    "main.js": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.85a0eb13.js",
+    "main.css": "/modulo-3-evaluacion-intermedia-sararunda/static/css/main.f42e0ad0.css",
+    "main.js": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.ec2ce4fa.js",
+    "static/media/friends.jpg": "/modulo-3-evaluacion-intermedia-sararunda/static/media/friends.4e7b6418c579066f0d02.jpg",
     "index.html": "/modulo-3-evaluacion-intermedia-sararunda/index.html",
-    "main.85a0eb13.js.map": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.85a0eb13.js.map"
+    "main.f42e0ad0.css.map": "/modulo-3-evaluacion-intermedia-sararunda/static/css/main.f42e0ad0.css.map",
+    "main.ec2ce4fa.js.map": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.ec2ce4fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.85a0eb13.js"
+    "static/css/main.f42e0ad0.css",
+    "static/js/main.ec2ce4fa.js"
   ]
 }
