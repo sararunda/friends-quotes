@@ -1,6 +1,9 @@
 import '../styles/App.scss';
 import { useState } from 'react';
 import charactersJson from './data/characters.json';
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
 
 function App() {
   //states
@@ -55,59 +58,17 @@ function App() {
   };
   return (
     <div className="body">
-      <header className="header">
-        <div className="header-container">
-          <h1 className="title">Frases de Friends</h1>
-          <label className="label" htmlFor="">
-            Filtrar por frase
-          </label>
-          <input className="input" type="text" onChange={handleChangeFilter} />
-          <label className="label" htmlFor="">
-            Filtrar por personaje
-          </label>
-          <select name="" id="select" onChange={handleChangeSelect}>
-            <option value="todos">Todos</option>
-            <option value="ross">Ross</option>
-            <option value="monica">Monica</option>
-            <option value="joey">Joey</option>
-            <option value="phoebe">Phoebe</option>
-            <option value="chandler">Chandler</option>
-            <option value="rachel">Rachel</option>
-          </select>
-        </div>
-      </header>
-      <main className="main">
-        <ul>{renderList()}</ul>
-        <footer className="footer">
-          <form action="" onChange={handleFormChange}>
-            <h2>Añadir una nueva frase:</h2>
-            <label className="label" htmlFor="">
-              frase
-            </label>
-            <input
-              className="input"
-              id="quote"
-              type="text"
-              value={inputForm.quote}
-            />
-            <label className="label" htmlFor="">
-              Personaje
-            </label>
-            <input
-              className="input"
-              id="character"
-              type="text"
-              value={inputForm.character}
-            />
-            <input
-              className="input"
-              onClick={handleClickButton}
-              type="button"
-              value="Añadir una nueva frase"
-            />
-          </form>
-        </footer>
-      </main>
+      <Header
+        inputSearch={inputSearch}
+        handleChangeFilter={handleChangeFilter}
+        handleChangeSelect={handleChangeSelect}
+      />
+      <Main renderList={renderList} characters={characters} />
+      <Footer
+        handleFormChange={handleFormChange}
+        inputForm={inputForm}
+        handleClickButton={handleClickButton}
+      />
     </div>
   );
 }
