@@ -8,7 +8,7 @@ const AddInput = (props) => {
         className="input"
         id={props.inputId}
         type="text"
-        value={props.inputForm.name}
+        value={props.inputForm.quote}
       />
     </>
   );

@@ -1,13 +1,21 @@
 import '../styles/App.scss';
-import { useState } from 'react';
-import charactersJson from './data/characters.json';
+import { useEffect, useState } from 'react';
+// import charactersJson from './data/characters.json';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
+import getQuotes from '../service/fetch';
 
 function App() {
+  useEffect(
+    () =>
+      getQuotes().then((dataFromAPI) => {
+        setCharacters(dataFromAPI);
+      }),
+    []
+  );
   //states
-  const [characters, setCharacters] = useState(charactersJson);
+  const [characters, setCharacters] = useState([]);
   const [inputForm, setInputForm] = useState({
     quote: '',
     character: '',
@@ -28,6 +36,7 @@ function App() {
   const handleClickButton = (event) => {
     event.preventDefault();
     setCharacters([...characters, inputForm]);
+    setInputForm('');
   };
   const handleChangeFilter = (event) => {
     const inputValueSearch = event.target.value;

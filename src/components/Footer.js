@@ -9,6 +9,7 @@ const Footer = (props) => {
           labelTex={'Frase'}
           inputId={'quote'}
           name={'quote'}
+          value={props.inputForm.quote}
         />
         <label className="label" htmlFor="">
           Personaje

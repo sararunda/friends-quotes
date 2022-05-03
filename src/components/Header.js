@@ -4,7 +4,7 @@ const Header = (props) => {
       <div className="header-container">
         <h1 className="title">Frases de Friends</h1>
         <form action="">
-          <label className="label" htmlFor="">
+          <label className="label" htmlFor="text">
             Filtrar por frase
           </label>
           <input
@@ -13,10 +13,10 @@ const Header = (props) => {
             onChange={props.handleChangeFilter}
             inputSearch={props.inputSearch}
           />
-          <label className="label" htmlFor="">
+          <label className="label" htmlFor="select">
             Filtrar por personaje
           </label>
-          <select name="" id="select" onChange={props.handleChangeSelect}>
+          <select name="select" id="select" onChange={props.handleChangeSelect}>
             <option value="todos">Todos</option>
             <option value="ross">Ross</option>
             <option value="monica">Monica</option>
