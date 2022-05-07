@@ -7,13 +7,11 @@ import Footer from './Footer';
 import getQuotes from '../service/fetch';
 
 function App() {
-  useEffect(
-    () =>
-      getQuotes().then((dataFromAPI) => {
-        setCharacters(dataFromAPI);
-      }),
-    []
-  );
+  useEffect(() => {
+    getQuotes().then((dataFromAPI) => {
+      setCharacters(dataFromAPI);
+    });
+  }, []);
   //states
   const [characters, setCharacters] = useState([]);
   const [inputForm, setInputForm] = useState({
@@ -36,7 +34,10 @@ function App() {
   const handleClickButton = (event) => {
     event.preventDefault();
     setCharacters([...characters, inputForm]);
-    setInputForm('');
+    setInputForm({
+      character: '',
+      quote: '',
+    });
   };
   const handleChangeFilter = (event) => {
     const inputValueSearch = event.target.value;

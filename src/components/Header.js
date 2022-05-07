@@ -11,13 +11,13 @@ const Header = (props) => {
             className="input"
             type="text"
             onChange={props.handleChangeFilter}
-            inputSearch={props.inputSearch}
+            value={props.inputSearch}
           />
           <label className="label" htmlFor="select">
             Filtrar por personaje
           </label>
           <select name="select" id="select" onChange={props.handleChangeSelect}>
-            <option value="todos">Todos</option>
+            <option value="">Todos</option>
             <option value="ross">Ross</option>
             <option value="monica">Monica</option>
             <option value="joey">Joey</option>
