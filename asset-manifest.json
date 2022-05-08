@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/modulo-3-evaluacion-intermedia-sararunda/static/css/main.a6f35a96.css",
-    "main.js": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.ec2ce4fa.js",
-    "static/media/friends.jpg": "/modulo-3-evaluacion-intermedia-sararunda/static/media/friends.4e7b6418c579066f0d02.jpg",
+    "main.css": "/modulo-3-evaluacion-intermedia-sararunda/static/css/main.6ea0a392.css",
+    "main.js": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.285cde1c.js",
+    "static/media/friends.jpg": "/modulo-3-evaluacion-intermedia-sararunda/static/media/friends.c5ecb305012e4d4ee2ec.jpg",
     "index.html": "/modulo-3-evaluacion-intermedia-sararunda/index.html",
-    "main.a6f35a96.css.map": "/modulo-3-evaluacion-intermedia-sararunda/static/css/main.a6f35a96.css.map",
-    "main.ec2ce4fa.js.map": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.ec2ce4fa.js.map"
+    "main.6ea0a392.css.map": "/modulo-3-evaluacion-intermedia-sararunda/static/css/main.6ea0a392.css.map",
+    "main.285cde1c.js.map": "/modulo-3-evaluacion-intermedia-sararunda/static/js/main.285cde1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6f35a96.css",
-    "static/js/main.ec2ce4fa.js"
+    "static/css/main.6ea0a392.css",
+    "static/js/main.285cde1c.js"
   ]
 }
