@@ -23,7 +23,7 @@ Publication of the result on the Internet using GitHub Pages.
 
 * :mag_right: A header: with the title of the page and the quotes finder. You can filter by character and keyword.
 * :clipboard: Main: with all possible quotes.
-* :bulb:Footer: you can see a form to enter new quotes.
+* :bulb: Footer: you can see a form to enter new quotes.
 
 ### Built with 🛠️:
 
